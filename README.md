@@ -1,35 +1,15 @@
-# Htwg Scala Seed Project 
+Rush Hour
 =====================================================
-## the easiest way to start a project for the lecture SE
+## This is a Scala project where we develop a game learning to work with VCS
 
 
-This is a seed project to create a basic scala project as used in the
+This is a duo team project to create a scala game from scratch 
+with real-life board game role models as lectured in the
 class Software Engineering at the University of Applied Science HTWG Konstanz.
 
-It requires Java 8 on your local platform.
-The project has
-* a folder structure prepared for a MVC-style application
-* *ScalaTest* and as dependency aswell as dependencies to other libraries in the build.sbt (commented out at start).
-* *scalastyle-sbt-plugin* and *sbt-scoverage* sbt plugins
-* .gitignore defaults
+#### Our game project is called Rush Hour.
 
-The easiest way to create your own project from this seed is
-* create an account on github
-* navigate to this project on github (https://github.com/markoboger/htwg-scala-seed)
-* fork this project on github (button on top right "Fork")
-* copy the URL to your fork
-* clone the forked project from your local git (git clone <URL>) or IDE (IDEA: File > New > Import from Version Controll > github)
-
-After that, please rename
-* the Project name from htwg-scala-seed to <your game name>
-* the the package structure from de.htwg.se.yourgame to de.htwg.se.<your game name>
-* the name of the project in the build.sbt file from htwg-scala-seed to <your game name>
-* the main Class YourGame to <YourGameName>
-
-Then
-* push to git
-* add team partner to your project on github (Settings > Collaborators)
-* clone on partners account
-* push and pull back and forth
-
+It's a single player 6x6 sliding block puzzle game invented by Nob Yoshigahara 
+and first published in the USA 1996.
+With it's different difficulty levels it can be challenging not only for kids. 
 
