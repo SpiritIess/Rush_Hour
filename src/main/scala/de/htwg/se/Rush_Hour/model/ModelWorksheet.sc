@@ -2,26 +2,24 @@ object printProject {
   println("Project: Rush_Hour")
 }
 
-case class Cell(x:Int,y:Int,car:Int){
+case class Cell(x:Int,y:Int,car:Car){
   println("Cell was created")
-  def occ: Int=car
+  def occ: Car = car
 }
-val cell11 =Cell(0,0,0)
-val cell12 =Cell(0,1,3)
-val cell52 =Cell(5,2,0)
-
-case class Standard_field(cell:Vector[Cell]){
-  def isSolved: Boolean = cell52.car == 1
-}
-val field0 = Standard_field(Vector(cell11,cell12))
-field0.isSolved
-cell12.occ
-cell11.occ
-case class Car(length:Int, alignment: Int){
+case class Car(length:Int, alignment: Int, value: Int){
   def getLength: Int = length
-  def getAlignment: Int = alignment //0=horizontal 1=vertical
+  def getAlignment: Int = alignment //1=horizontal 2=vertical
+  def getValue: Int = value
 }
-val car1 = Car(3,1)
+val car1 = Car(3,1,1)
 car1.getLength
 car1.getAlignment
-val car2 = Car(2,2)
+val car2 = Car(2,2,2)
+
+val cell11 =Cell(1,1,car1)
+val cell12 =Cell(1,2,car1)
+val cell52 =Cell(5,2,car2)
+
+cell12.occ
+cell11.occ
+
