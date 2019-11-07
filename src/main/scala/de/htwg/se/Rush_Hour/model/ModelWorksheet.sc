@@ -29,3 +29,6 @@ val cell52 =Cell(5,2,2)
 cell12.getOcc
 cell11.isOcc
 
+val randomnr = scala.util.Random
+randomnr.nextInt(4) + 1
+
