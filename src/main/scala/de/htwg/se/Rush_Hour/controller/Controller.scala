@@ -1,6 +1,9 @@
 package de.htwg.se.Rush_Hour.controller
 
-class Controller {
+import de.htwg.se.Rush_Hour.util.Observable
+import de.htwg.se.Rush_Hour.model.{Grid, Solver, GridCreator}
+
+class Controller(var grid:Grid) extends Observable {
   def createEmptyGrid(size: Int):Unit = {
     grid = new Grid(size)
     notifyObservers
