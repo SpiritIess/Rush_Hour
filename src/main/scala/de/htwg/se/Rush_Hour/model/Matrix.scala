@@ -1,13 +1,13 @@
 package de.htwg.se.Rush_Hour.model
 
-case class Matrix[T](rows: Vector[Vector[T]]) {
-  def this(size: Int, filling: T) = this(Vector.tabulate(size, size) { (row, col) => filling})
+case class Matrix(cells: Vector[Vector[Cell]]) {
+  def this(size: Int) = this(Vector.tabulate(size, size) { (row, col) => Cell(0)})
 
-  val size: Int = rows.size
+  val size: Int = cells.size
 
-  def cell(row: Int, col: Int): T = rows(row)(col)
+  def cell(row: Int, col: Int): Cell = cells(row)(col)
 
-  def fill(filling: T): Matrix[T] = copy(Vector.tabulate(size, size) { (row, col) => filling })
+  def fill(filling: Cell): Matrix = copy(Vector.tabulate(size, size) { (row, col) => filling })
 
-  def replaceCell(row: Int, col: Int, cell: T): Matrix[T] = copy(rows.updated(row, rows(row).updated(col, cell)))
+  //def replaceCell(row: Int, col: Int, carID: Int): Matrix = copy(cells.updated(row, cells(row).updated(col, cells)))
 }
