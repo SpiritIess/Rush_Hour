@@ -14,9 +14,9 @@ object Rush_Hour {
     var input: String = ""
     var IDInput: Int = 0
     do{
-      println("Grid : " + grid.toString)
       input = readLine()
       grid = tui.processInputLine(grid,input)
+      println("Grid : " + grid.toString)
     } while (input != "q")
   }
 }
