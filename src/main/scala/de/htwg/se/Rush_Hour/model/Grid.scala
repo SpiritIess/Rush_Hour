@@ -1,6 +1,6 @@
 package de.htwg.se.Rush_Hour.model
 
-import de.htwg.se.Rush_Hour.model.{Car,Cell,Player,CellFill}
+import de.htwg.se.Rush_Hour.model.{Cell,Player,CellFill}
 case class Grid(statusnr:Int) {
   val rows = 6
   val columns = 6
