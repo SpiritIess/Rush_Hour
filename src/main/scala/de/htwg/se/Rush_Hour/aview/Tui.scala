@@ -1,9 +1,10 @@
 package de.htwg.se.Rush_Hour.aview
 import de.htwg.se.Rush_Hour.model.{Cell,Grid,Car,Game}
 
+import de.htwg.se.Rush_Hour.controller.Controller
+import de.htwg.se.Rush_Hour.util.Observer
+
 class Tui {
-
-
 
   def processInputLine(grid: Grid, input: String):Grid = { //man gibt das derzeitige level(speicherstand)
     // , den move und das auto auf das der move ausgeführt werden soll
